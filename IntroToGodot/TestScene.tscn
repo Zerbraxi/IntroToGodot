@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0f5wi25aovvi"]
+
+[ext_resource type="Texture2D" uid="uid://yaqi1da18huv" path="res://Sprites/Player.png" id="1_554gf"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" type="Sprite2D" parent="."]
+texture = ExtResource("1_554gf")
+
+[node name="Player2" type="Sprite2D" parent="."]
+texture = ExtResource("1_554gf")
+offset = Vector2(75, 2.08165e-12)
+
+[node name="Player3" type="Sprite2D" parent="."]
+texture = ExtResource("1_554gf")
+offset = Vector2(-75, 2.08165e-12)
