@@ -1,16 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://c0f5wi25aovvi"]
+[gd_scene load_steps=3 format=3 uid="uid://c0f5wi25aovvi"]
 
 [ext_resource type="Texture2D" uid="uid://yaqi1da18huv" path="res://Sprites/Player.png" id="1_554gf"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ecrqw"]
+size = Vector2(53, 66.0027)
+
 [node name="Node2D" type="Node2D"]
 
-[node name="Player" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -5)
 texture = ExtResource("1_554gf")
 
-[node name="Player2" type="Sprite2D" parent="."]
-texture = ExtResource("1_554gf")
-offset = Vector2(75, 2.08165e-12)
-
-[node name="Player3" type="Sprite2D" parent="."]
-texture = ExtResource("1_554gf")
-offset = Vector2(-75, 2.08165e-12)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
+position = Vector2(-0.503568, 15.0013)
+rotation = 0.00711656
+shape = SubResource("RectangleShape2D_ecrqw")
