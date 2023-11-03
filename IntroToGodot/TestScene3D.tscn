@@ -30,7 +30,6 @@ mesh = SubResource("SphereMesh_igx87")
 skeleton = NodePath("../..")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Snow"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 material_override = ExtResource("1_j3n4d")
 mesh = SubResource("SphereMesh_igx87")
 skeleton = NodePath("../..")
